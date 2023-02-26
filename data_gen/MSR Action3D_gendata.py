@@ -50,19 +50,3 @@ print(np.mean(cal))
 # np.save('{}/{}_data_joint.npy'.format(out_path, part), fp)
 np.save('{}/all_data_joint.npy'.format(out_path), fp)
 
-
-# l = open('../data/MSR_Action3D/all_label.pkl','rb')
-# label_pkl = pickle.load(l)
-# label = label_pkl[1]
-
-# import  os
-# import pandas as pd
-# data_path = 'D:/MSRAction3D/MSRAction3D_download/MSRAction3DSkeletonReal3D'
-# for filename in os.listdir(data_path):
-#     keypoint = pd.read_csv('D:/MSRAction3D/MSRAction3D_download/MSRAction3DSkeletonReal3D/{}'.format(filename),sep='\t',header=None)     #读入txt文件，分隔符为\t
-#
-#     keypoint.columns=['x']
-#     keypoint['y']=None
-#     keypoint['z']=None
-#     keypoint['c']=None
-#     print(len(keypoint)/20)

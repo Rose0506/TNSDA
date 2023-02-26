@@ -7,12 +7,12 @@ from preprocess import pre_normalization
 
 n = 0
 # data_path = 'D:/MSRAction3D/MSRAction3D_download/MSRAction3DSkeletonReal3D'
-# data_path = '../data/MSRAP_raw'    #400
-data_path = '../data/MSRDaily_Activity3D_raw'  #700
-# out_path = '../data/MSRAP'
-out_path = '../data/MSRDaily_Activity3D'
+data_path = '../data/MSRAP_raw'    #400
+# data_path = '../data/MSRDaily_Activity3D_raw'  #700
+out_path = '../data/MSRAP'
+# out_path = '../data/MSRDaily_Activity3D'
 N = len(os.listdir(data_path))
-fp = np.zeros((N, 700, 20, 3, 2), dtype=np.float32)
+fp = np.zeros((N, 400, 20, 3, 2), dtype=np.float32)
 sample_name = []
 sample_label = []
 cal = []
